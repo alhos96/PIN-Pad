@@ -1,0 +1,77 @@
+.button,
+.one,
+.two,
+.three {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  width: 92px;
+  height: 70px;
+  top: 207px;
+  background: #453c3c;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.one,
+.four,
+.seven,
+.clear {
+  left: 19%;
+}
+
+.two,
+.five,
+.eight,
+.zero {
+  left: 40%;
+}
+
+.three,
+.six,
+.nine,
+.enter {
+  left: 61%;
+}
+
+.four,
+.five,
+.six {
+  top: 297px;
+}
+
+.seven,
+.eight,
+.nine {
+  top: 387px;
+}
+
+.clear,
+.zero,
+.enter {
+  top: 477px;
+}
+
+.clear {
+  background-color: #eb4848;
+  font-size: 28px;
+}
+
+.enter {
+  background-color: #30b96f;
+  font-size: 28px;
+}
+
+.button:hover {
+  background: #413838;
+}
+
+.clear:hover {
+  background-color: #e04444;
+}
+
+.enter:hover {
+  background-color: #2ca765;
+}
