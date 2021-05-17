@@ -43,7 +43,7 @@ class InputScreen extends Component {
   };
 
   onClickClear = () => {
-    this.setState({ inputPassword: (PIN = []) });
+    this.setState({ inputPassword: (PIN = []), placeholder: "" });
   };
 
   render() {
@@ -51,8 +51,11 @@ class InputScreen extends Component {
       <div>
         <form onSubmit={this.onSubmit}>
           <input
-            type="text"
+            type="password"
             name="inputPassword"
+            onKeyDown={(e) => {
+              e.preventDefault();
+            }}
             placeholder={this.state.placeholder}
             className={this.props.className}
             value={this.state.inputPassword}
